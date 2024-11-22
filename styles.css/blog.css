@@ -1,0 +1,139 @@
+.container_blog {
+  margin-bottom: 150px;
+}
+
+.blog_Title {
+  font-weight: 400;
+  font-size: 40px;
+  color: #151618;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.article_blog_List {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.article_blog_Item {
+  display: flex;
+  gap: 20px;
+  flex: 1 0 47%;
+}
+
+.article_blog_Image {
+  width: 270px;
+  height: 180px;
+}
+
+.article_blog_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.item_blog_title {
+  font-weight: 400;
+  font-size: 24px;
+  color: #151618;
+}
+
+.item_blog_text {
+  font-weight: 300;
+  font-size: 13px;
+  color: #151618;
+  margin: 0;
+}
+
+.read {
+  transition: 1s;
+}
+
+.read::after {
+  content: url("../images/icon/arrow.svg");
+  width: 5px;
+  height: 10px;
+  margin-left: 8px;
+}
+
+.read:hover {
+  color: #ffcc79;
+  transform: translateX(5%);
+}
+
+.button_Blog {
+  display: block;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  color: #151618;
+  background-color: white;
+  border: 1px solid #151618;
+  padding: 12px 41px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.button_Blog:hover {
+  background-color: #f7f2ea;
+  transition: 0.2s ease-in;
+}
+
+@media (max-width: 1200px) {
+  .article_blog_Image {
+    width: 230px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 920px) {
+  .article_blog_Image {
+    width: 270px;
+    height: 180px;
+  }
+
+  .article_blog_List {
+    display: flex;
+  }
+
+  .article_blog_Item:nth-child(even) {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 680px) {
+  .article_blog_Item:nth-child(even) {
+    margin-left: 0;
+  }
+  .article_blog_Image {
+    width: 230px;
+    height: 150px;
+  }
+}
+@media (max-width: 460px) {
+  .article_blog_List {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article_blog_Item {
+    flex-direction: column;
+  }
+
+  .article_blog_Image {
+    width: 270px;
+    height: 180px;
+  }
+
+  .article_blog_description {
+    width: 16.8rem;
+  }
+
+  .article_blog_Item:nth-child(n + 3) {
+    display: none;
+  }
+}

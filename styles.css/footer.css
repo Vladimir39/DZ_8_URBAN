@@ -1,0 +1,217 @@
+.footer {
+  background-color: #f7f2ea;
+  padding: 100px 0 20px 0;
+}
+
+.footer_section {
+  display: flex;
+  justify-content: space-between;
+  gap: 180px;
+  margin-bottom: 100px;
+}
+
+.footer_block {
+  display: flex;
+  gap: 40px;
+}
+
+.footer_list {
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+}
+
+.product_Title {
+  font-size: 24px;
+  color: #151618;
+  margin-bottom: 50px;
+}
+
+.footer_list_text {
+  font-size: 16px;
+  color: #151618;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.footer_quote_text {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #151618;
+  padding-top: 80px;
+  max-width: 450px;
+  margin-bottom: 20px;
+}
+
+.footer_quote_author {
+  font-size: 12px;
+  color: #151618;
+}
+
+.footer_contact_title {
+  font-size: 24px;
+
+  color: #151618;
+  margin-bottom: 50px;
+}
+
+.footer_contact_text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #151618;
+  margin-bottom: 20px;
+}
+
+.footer_contact {
+  display: flex;
+  gap: 40px;
+}
+
+.footer_logo {
+  width: 57px;
+  height: 91px;
+}
+
+.footer_contact_block {
+  padding-top: 20px;
+}
+
+.footer_contact_block_item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.text_contact {
+  align-items: center;
+  font-size: 13px;
+  color: #151618;
+}
+
+.text_contact:hover {
+  color: #ffcc79;
+  border-bottom: 1px solid #ffcc79;
+}
+
+.footer_contact_block_icon {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.icon-footer {
+  cursor: pointer;
+  transition: 1s;
+  width: 22px;
+  height: 22px;
+}
+
+.icon-footer:hover {
+  transform: scale(1.2);
+}
+
+.footer_info_pay {
+  display: flex;
+  gap: 170px;
+}
+
+.footer_info_text_info {
+  font-size: 16px;
+  color: #151618;
+}
+
+.footer_info_pay_img {
+  display: flex;
+  gap: 20px;
+}
+
+.pay_img {
+  width: 26px;
+  height: 20px;
+}
+
+@media (max-width: 1200px) {
+  .footer_section,
+  .footer_list {
+    gap: 100px;
+  }
+
+  .footer_quote_text {
+    padding-top: 0;
+  }
+}
+@media (max-width: 900px) {
+  .footer_section {
+    margin-bottom: 40px;
+  }
+  .footer_block {
+    display: block;
+  }
+
+  .footer_quote_author {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .footer_contact_block_icon {
+    padding-top: 10px;
+  }
+  .footer_info_pay {
+    gap: 30px;
+  }
+}
+@media (max-width: 720px) {
+  .footer_section {
+    display: block;
+  }
+  .footer_list,
+  .footer_contact_block {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  .footer_contact_block {
+    width: 100%;
+  }
+
+  .footer_contact_title,
+  .footer_contact_text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer_info_pay {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 430px) {
+  .footer_contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer_contact_block {
+    display: block;
+  }
+
+  .footer_contact_block_item {
+    justify-content: center;
+  }
+
+  .footer_contact_block_icon {
+    justify-content: center;
+  }
+
+  .footer_info_pay {
+    gap: 30px;
+  }
+}
+@media (max-width: 340px) {
+  .footer_list {
+    display: block;
+    text-align: center;
+    grid-column: 20px;
+  }
+}
